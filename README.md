@@ -4,7 +4,7 @@ Simple web scraper
 ## Stack
 
 The stack bellow was used mostly due to it's ease of installation, configuration and also efficiency and portability.
-* Language: Python (3.5)
+* Language: Python (3.5.2)
 * Framework: Django (1.11)
 * DB: SQLite (3.16.2)
 
