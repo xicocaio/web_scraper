@@ -1,11 +1,11 @@
-# web_scraper
-Simple web scraper with google bigquery integration
+# Web Scraper
+Simple web scraper with Google BigQuery integration
 
 ## Stack
 
 The stack bellow was used mostly due to it's ease of installation, configuration and also efficiency and portability.
 * Language: Python (3.5.2)
-* Cloud Service: Google Cloud BigQuery
+* Cloud Service: Google Cloud BigQuery (1.5.0)
 
 ## Pre-installation
 
@@ -54,6 +54,12 @@ Now we will run the project and get query answers
 
 ```bash
 $ python app
+```
+
+* To run just the step 4 above, pass the argument step=query:
+
+```bash
+$ python app --step=query
 ```
 
 * Console output example:
