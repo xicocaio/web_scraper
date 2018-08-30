@@ -141,6 +141,10 @@ least expensive products : R$1300, iphones 7 e 8  com os melhores preços aprove
 
 
 ## Further Improvements
+* Tests
+
+    Unitary and integration tests will guarantee consistency and good maintainability 
+
 * Job scheduler
 
     Adding a feature for scheduling each job separately with improve performance 
