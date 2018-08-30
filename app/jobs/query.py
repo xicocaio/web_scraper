@@ -20,7 +20,7 @@ def get_avg_price_by_city():
         print("{} : R${}".format(row.city, row.average_price))
 
 
-def get_most_offers_by_city():
+def get_most_offers_city():
     print('\n--> Qual a cidade que mais possui ofertas do produto?')
     client = bigquery.Client()
 
@@ -29,7 +29,7 @@ def get_most_offers_by_city():
                                        COUNT(p.city) AS amount
                                 FROM `data-team-test-777.web_scraper.product` p
                                 GROUP BY p.city
-                                ORDER BY amount DESC
+                                ORDER BY amount DESC LIMIT 1
                             """)
 
     results = query_job.result()  # Waits for job to complete.
@@ -68,7 +68,7 @@ def get_most_least_expensive():
 def run_all_queries():
     print('--- Respondendo as perguntas ---\n ')
     get_avg_price_by_city()
-    get_most_offers_by_city()
+    get_most_offers_city()
     get_most_least_expensive()
 
 
