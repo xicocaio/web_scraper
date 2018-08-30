@@ -110,3 +110,5 @@ venv.bak/
 # code generated data
 app/data/
 
+# json with key
+*.json
